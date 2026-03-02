@@ -8,19 +8,40 @@
 <meta property="og:title" content="SilverSuzuna">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SilverSuzuna">
-<meta property="og:description" content="MHP3rd Database is a site dedicated to providing information and tools in English for Monster Hunter Portable 3rd.">
 
 <link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="assets/navmenu.css">
 </head>
 <body>
 
-<div id="main" class="main">
-<div id="sidenav" class="sidenav"></div>
+<div class="main">
+	<div class="window">
+		<a href="index.html"><img class="logo" src="assets/logo.png"></a>
+		
+		<a href="https://github.com/SilverJolteon/FreedomDX" target="_blank">Monster Hunter Freedom DX</a>
+		<a href="https://silverjolteon.github.io/MHGU/save-manager/index.html" target="_blank">MHXX/MHGU Save Manager</a>
+		<a href="https://mhp3db.github.io/" target="_blank">MHP3rd Database</a>
+		<a href="https://silverjolteon.github.io/ACNH/editor/index.html" target="_blank">ACNH Custom Color Editor</a>
+		</br>
+		<a href="https://www.youtube.com/channel/UCRWS_gaVhwrD7aXDftkWS3A" target="_blank">YouTube</a>
+		<a href="https://www.twitch.tv/silverjolteon" target="_blank">Twitch</a>
+		<a href="https://bsky.app/profile/silversuzuna.bsky.social" target="_blank">Bluesky</a>
+		<a href="https://twitter.com/SilverJolteon" target="_blank">Twitter</a>
+		<a href="https://silverjolteon.tumblr.com/tagged/over%201000" target="_blank">tumblr [Old]</a>
+		</br>
+		<a href="https://discord.gg/kaPScVrPes" target="_blank">MGN Discord</a>
+	</div>
 </div>
 
 <div id="footer" class="footer"></div>
-<script src="scripts/navmenu.js"></script>
+
+<script>
+var footer = document.getElementById("footer");
+var now = new Date();
+var year = now.getFullYear();
+var start_year = 2026;
+year = (year != start_year) ? `${start_year} - ${year}` : year;
+footer.innerHTML = `<p><a href="https://github.com/SilverJolteon">&copy;${year} SilverJolteon</a></p>&nbsp;&#183;&nbsp;<p><a href="https://kokomicomms.carrd.co/">Icon by kokomi</a></p>`;
+</script>
 </body>
 </html>
